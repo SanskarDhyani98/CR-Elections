@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Elections</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>CR Elections</h1>
+    </header>
+
+    <section id="email-validation">
+        <h2>Enter email</h2>
+        <form id="email-form">
+            <input type="email" id="email-field" name="email" required>
+        </form>
+        <p id="validation-message"></p>
+    </section>
+
+    <section id="candidates">
+        <h2>Registered Candidates</h2>
+        <form id="radioForm">
+            <label>
+                <input type="radio" name="option" value="Anoop Saini"> Anoop Saini
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="Ayush Gupta"> Ayush Gupta
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="Gorantla Srinivas"> Gorantla Srinivas
+            </label><br>
+            <br><button type="submit">Vote</button>
+        </form>
+    </section>
+
+    <section id="results">
+        <h2>Election Results</h2>
+        <div id="result-info">
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
